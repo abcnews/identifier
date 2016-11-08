@@ -1,8 +1,10 @@
-var expect = require('expect.js')
+/* globals describe,it */
+
+var expect = require('expect.js');
 var identifier = require('../index');
 
 describe('identifier', function(){
-	
+
 	it('should be a function', function(){
 		expect(identifier).to.be.a('function');
 	});
@@ -38,5 +40,5 @@ describe('identifier', function(){
 			expect(instance('section', 'state', '.')).to.be('.Test-section--state');
 		});
 	});
-	
+
 });
